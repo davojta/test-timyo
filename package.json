@@ -1,0 +1,31 @@
+{
+  "name": "test-js-timyo",
+  "version": "0.0.1",
+  "description": "Set of tests for fe candidates",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davojta/test-timyo.git"
+  },
+  "author": "Dzianis Sheka @davojta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davojta/test-timyo/issues"
+  },
+  "homepage": "https://github.com/davojta/test-timyo#readme",
+  "devDependencies": {
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "jest": "^20.0.4"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "lodash.clonedeep": "^4.5.0",
+    "moment": "^2.18.1",
+    "redux": "^3.7.2"
+  }
+}
