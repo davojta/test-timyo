@@ -16,6 +16,8 @@ import {
 import config from './defaultFallbackConfig';
 
 let template = '{when}: {emoji} {tone}. {ifcc}';
+const ifText = 'If cc: read';
+let toneTemplate = '{action} by {date}';
 
 describe('getExpectationHeader', () => {
     beforeEach(() => {
@@ -23,22 +25,23 @@ describe('getExpectationHeader', () => {
     });
     describe('replace template with options', () => {
         it('and put When to the template', () => {
-            const result = getExpectationHeader(template);
+            const result = getExpectationHeader(template, toneTemplate, ifText);
 
             expect(result).toContain('When: ');
         });
         it('and put tone to the template', () => {
-            const result = getExpectationHeader(template);
+            const tone = '{action} by {date}';
+            const result = getExpectationHeader(template, tone, ifText);
 
             expect(result).toContain('Please, read ASAP');
         });
         it('and put ifcc to the template', () => {
-            const result = getExpectationHeader(template);
+            const result = getExpectationHeader(template, toneTemplate, ifText);
 
             expect(result).toContain('If CC: read');
         });
         it('and put emoji to the template', () => {
-            const result = getExpectationHeader(template);
+            const result = getExpectationHeader(template, toneTemplate, ifText);
 
             expect(result).toContain('🌞');
         });
