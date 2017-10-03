@@ -2,6 +2,7 @@ import {
     palindrome,
     removeDublicates,
     logger,
+    sum
 } from './basics'
 
 
