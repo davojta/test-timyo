@@ -2,6 +2,7 @@ import {
     palindrome,
     removeDublicates,
     logger,
+    sum
 } from './basics'
 
 
@@ -20,7 +21,7 @@ describe('polindrom', () => {
     it('should check if word is polindrom', () => {
         expect(palindrome('race car')).toBe(true);
         expect(palindrome('car')).toBe(false);
-        expect(palindrome('never odd or even')).toBe(false);
+        expect(palindrome('never odd or even')).toBe(true);
     })
 });
 
