@@ -106,12 +106,12 @@ describe('add expectationHeader middleware', () => {
 <td class="eV">
 <div>
 <div class="vR">
-<span class="vN bfK a3q" email="denis@timyo.com"><div class="vT">Dzianis Sheka</div><div class="vM"></div></span><input name="to" type="hidden" value="Dzianis Sheka <denis@timyo.com">
+<!--<span class="vN bfK a3q" email="denis@timyo.com"><div class="vT">Dzianis Sheka</div><div class="vM"></div></span><input name="to" type="hidden" value="Dzianis Sheka <denis@timyo.com">-->
 
 
 </div>
 <div class="vR">
-<span class="vN bfK a3q" email="denis@timyo.com"><div class="vT">Dzianis Sheka</div><div class="vM"></div></span><input name="to" type="hidden" value="Dzianis Sheka <denis@timyo.com">
+<!--<span class="vN bfK a3q" email="denis@timyo.com"><div class="vT">Dzianis Sheka</div><div class="vM"></div></span><input name="to" type="hidden" value="Dzianis Sheka <denis@timyo.com">-->
 
 
 </div>
@@ -173,7 +173,6 @@ describe('add expectationHeader middleware', () => {
         bindedMiddleware(action);
 
         const $messageBody = $('div[g_editable="true"][role="textbox"][contenteditable="true"]', $('.js-id-0'));
-        console.log('mess', $messageBody.html());
         expect($messageBody.find('br').length).toBe(1);
     });
     it('dispatch register_letter action', () => {
