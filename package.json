@@ -25,7 +25,7 @@
   "dependencies": {
     "i18next": "^9.0.0",
     "i18next-xhr-backend": "^1.4.3",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "lodash.clonedeep": "^4.5.0",
     "moment": "^2.18.1",
     "redux": "^3.7.2"
