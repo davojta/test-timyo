@@ -17,10 +17,10 @@
   },
   "homepage": "https://github.com/davojta/test-timyo#readme",
   "devDependencies": {
-    "babel-jest": "^20.0.3",
+    "babel-jest": "^29.3.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "jest": "^20.0.4"
+    "jest": "^29.3.1"
   },
   "dependencies": {
     "i18next": "^9.0.0",
